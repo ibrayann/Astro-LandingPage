@@ -1,0 +1,16 @@
+---
+import feactures from "../../config/feactures.json";
+---
+
+<h1 class="text-center text-5xl font-bold my-10">Feacture</h1>
+
+<div class="grid grid-col-1 md:grid-cols-3 gap-4 p-4">
+  {
+    feactures.map((feacture) => (
+      <div class=" bg-slate-800 p-8 rounded-xl">
+        <h1 class=" text-2xl font-bold my-4">{feacture.title}</h1>
+        <p>{feacture.Descripcion}</p>
+      </div>
+    ))
+  }
+</div>
